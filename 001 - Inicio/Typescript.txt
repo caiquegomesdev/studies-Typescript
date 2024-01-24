@@ -1,0 +1,16 @@
+Typescript
+TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É uma linguagem superset do JavaScript, o que significa que adiciona recursos e funcionalidades ao JavaScript existente.
+
+O TypeScript foi criado com o objetivo de fornecer uma camada de tipagem estática opcional sobre o JavaScript. Ele permite que os desenvolvedores escrevam código JavaScript de forma mais robusta e escalável, adicionando recursos como:
+
+Tipagem estática: O TypeScript permite definir tipos para variáveis, parâmetros de função, retorno de função e outros elementos do código. Essa tipagem estática permite detectar erros de tipo durante a fase de desenvolvimento, antes mesmo de executar o código.
+
+Recursos avançados de linguagem: O TypeScript adiciona recursos avançados à linguagem JavaScript, como suporte a classes, interfaces, enumerações, tipos genéricos, módulos e muito mais. Esses recursos ajudam a organizar e estruturar o código de forma mais eficiente e orientada a objetos.
+
+Ferramentas de desenvolvimento: O TypeScript é amplamente suportado por ferramentas de desenvolvimento, como editores de código, IDEs e compiladores. Essas ferramentas fornecem recursos avançados de autocompletar, análise estática, refatoração e depuração, ajudando os desenvolvedores a escrever código de forma mais eficiente e livre de erros.
+
+Compatibilidade com JavaScript: O TypeScript é totalmente compatível com o JavaScript existente. Isso significa que qualquer código JavaScript válido também é um código TypeScript válido. Os desenvolvedores podem migrar gradualmente seus projetos JavaScript existentes para TypeScript, adicionando gradualmente tipagem e recursos adicionais conforme necessário.
+
+Ao escrever código em TypeScript, é necessário transpilá-lo para JavaScript antes de ser executado no navegador ou em qualquer ambiente JavaScript. O compilador do TypeScript converte o código TypeScript em código JavaScript compatível.
+
+TypeScript é amplamente adotado em projetos de desenvolvimento web e de grande escala. Ele oferece benefícios significativos em termos de segurança, escalabilidade, manutenibilidade e produtividade, tornando-se uma escolha popular para muitos desenvolvedores e equipes de desenvolvimento.
