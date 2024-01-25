@@ -1,0 +1,18 @@
+Tipos
+A tipagem no TypeScript refere-se à capacidade de declarar e utilizar tipos de dados em seu código. Ela permite que você especifique o tipo de uma variável, parâmetro de função, retorno de função e outros elementos do código.
+
+Diferentemente do JavaScript, que é uma linguagem de tipagem dinâmica, onde os tipos de dados são inferidos em tempo de execução, o TypeScript introduz a tipagem estática opcional. Isso significa que você pode definir explicitamente o tipo de uma variável durante a fase de desenvolvimento.
+
+Ao utilizar a tipagem no TypeScript, você pode obter os seguintes benefícios:
+
+Detecção de erros de tipo: Com a tipagem estática, o compilador do TypeScript é capaz de identificar potenciais erros de tipo em seu código antes mesmo de ser executado. Isso ajuda a evitar erros comuns, como atribuir valores incompatíveis a variáveis ou chamar funções com argumentos de tipo errado.
+
+Autocompletar e sugestões: Com base nos tipos definidos, as ferramentas de desenvolvimento, como editores de código e IDEs, podem oferecer autocompletar e sugestões mais precisas. Isso torna mais fácil e eficiente escrever código, especialmente quando trabalhando com bibliotecas ou APIs complexas.
+
+Legibilidade e documentação: A tipagem explícita torna o código mais legível e autoexplicativo. Ao revisar ou manter o código, é mais fácil entender o tipo de dados esperado para cada variável ou função, o que facilita a documentação e a colaboração entre a equipe de desenvolvimento.
+
+Refatoração e renomeação seguras: Com a tipagem estática, você pode realizar refatorações em seu código com mais confiança. Ao renomear uma variável, por exemplo, o compilador do TypeScript pode verificar todas as ocorrências desse nome e garantir que todas as referências estejam corretas, evitando erros sutis.
+
+No entanto, vale ressaltar que o TypeScript também suporta a inferência de tipos, o que significa que você não precisa declarar o tipo de todas as variáveis explicitamente. O compilador do TypeScript é capaz de inferir o tipo com base no valor atribuído a uma variável, quando possível.
+
+A tipagem no TypeScript é opcional, o que significa que você pode optar por utilizar a tipagem em todo o seu código, em partes específicas ou não usá-la de forma alguma. Isso permite que você adapte o nível de tipagem de acordo com as necessidades do seu projeto e equipe de desenvolvimento.
