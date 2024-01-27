@@ -10,7 +10,7 @@ private -Pode ser acessada somente pela propria classe
 class Pessoa{ 
     public nome: string = "";
     public idade : number = 0;
-    private _profissao: string = "Programador"; // O "_" serve para indicar que e uma propriedade privada EX: _cpf, _profissao, _senha, _cnpj
+
     constructor(nome: string, idade: number){
         this.nome = nome;
         this.idade = idade;
@@ -25,15 +25,35 @@ class Pessoa{
     }
 }
 
+class Gomes extends Pessoa{
+    private profissao: string = "Programador";
+
+    constructor(){
+        super("Gomes", 23)
+    }
+    
+    public getProfissao(){
+        return `${this.nome} trabalha como ${this.profissao}`
+    }
+}
 
 
-const pessoa = new Pessoa("Caique Gomes", 23);
-console.log(pessoa.comer("Feijoada"));
-console.log(pessoa.fezAniversario());
+const gomes = new Gomes();
+console.log(gomes.nome);
+console.log(gomes.idade);
+console.log(gomes.comer("pizza")); 
+console.log(gomes.fezAniversario())
+console.log(gomes.getProfissao());
 
-const pessoa2 = new Pessoa("Lorena ", 23);
-console.log(pessoa2.comer("Quiabada"));
-console.log(pessoa2.fezAniversario());
+console.log("===============================");
 
-
-
+// class Caio extends Pessoa{
+//     constructor(){
+//         super("Caio", 22)
+//     }
+// }
+// const caio = new Caio();
+// console.log(caio.nome);
+// console.log(caio.idade);
+// console.log(caio.comer("Pastel")); 
+// console.log(caio.fezAniversario())

@@ -1,0 +1,9 @@
+Modificadores de acesso [private]
+Atualmente, com JavaScript e TypeScript, ao adicionar o símbolo "#" antes de uma propriedade ou metódo, ela se torna privada por padrão. Isso reforça a encapsulação e a segurança dos dados no código.
+
+class MinhaClasse { 
+   #propriedadePrivada: number = 1;
+   #metodo(){
+    return 1;
+   }
+} 
