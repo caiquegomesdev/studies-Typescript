@@ -1,0 +1,45 @@
+Interfaces
+
+Interfaces em TypeScript são uma forma de definir contratos ou contratos de tipo. Elas descrevem a estrutura e o comportamento esperado de um objeto em termos de propriedades, métodos e tipos de dados.
+
+Uma interface é declarada usando a palavra-chave interface, seguida pelo nome da interface. Dentro da interface, você pode definir as propriedades e métodos esperados, juntamente com seus tipos.
+
+Aqui está um exemplo simples de uma interface chamada Pessoa:
+
+
+
+interface Pessoa {
+  nome: string;
+  idade: number;
+  saudacao(): void;
+}
+
+
+Neste exemplo, a interface Pessoa descreve que um objeto do tipo Pessoa deve ter uma propriedade nome do tipo string, uma propriedade idade do tipo number e um método saudacao() que não retorna nenhum valor (void).
+
+As interfaces são usadas principalmente para definir contratos de tipo e garantir que objetos sigam uma estrutura específica. Elas não implementam a funcionalidade real, mas apenas definem o formato que um objeto deve seguir. Uma classe ou objeto pode implementar uma ou várias interfaces, garantindo assim que ele cumpra as expectativas definidas pela interface.
+
+Por exemplo, vamos criar uma classe Cliente que implementa a interface Pessoa:
+
+
+
+class Cliente implements Pessoa {
+  nome: string;
+  idade: number;
+ 
+  constructor(nome: string, idade: number) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+ 
+  saudacao(): void {
+    console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+  }
+}
+
+
+Neste caso, a classe Cliente implementa a interface Pessoa, o que significa que ela deve ter todas as propriedades e métodos definidos na interface. Se a classe não cumprir o contrato definido pela interface (por exemplo, se não implementar todas as propriedades ou métodos), um erro será gerado pelo compilador.
+
+As interfaces também podem ser usadas para definir tipos de função, tipos genéricos e herança de interface, permitindo criar estruturas de tipos complexas e reutilizáveis em seu código.
+
+As interfaces são uma parte essencial da tipagem estática do TypeScript e ajudam a garantir a consistência e a integridade do código. Elas promovem uma melhor documentação e entendimento dos objetos e suas estruturas em um projeto, tornando o desenvolvimento mais robusto e seguro.

@@ -1,0 +1,21 @@
+tsconfig.json
+
+O arquivo tsconfig.json é um arquivo de configuração utilizado pelo TypeScript para definir as opções e as configurações do compilador. Ele é usado para personalizar o comportamento e o processo de compilação do TypeScript em um projeto.
+
+O tsconfig.json permite especificar várias opções para o compilador do TypeScript, incluindo:
+
+Arquivos de origem: Você pode definir quais arquivos TypeScript devem ser incluídos no processo de compilação. Isso permite que você especifique um conjunto específico de arquivos que devem ser compilados em vez de compilar todos os arquivos do projeto.
+
+Opções de compilação: É possível configurar várias opções de compilação, como o destino de versão do JavaScript (ES5, ES6, etc.), o módulo de destino (CommonJS, AMD, etc.), a geração de código fonte mapas, o uso de sintaxe de import/export, entre outras opções.
+
+Emissão de erros e avisos: É possível definir o nível de rigorosidade do compilador, especificando quais erros e avisos devem ser emitidos durante o processo de compilação. Isso permite personalizar a forma como o TypeScript trata erros de tipo, compatibilidade e outras questões relacionadas ao código.
+
+Configurações de caminhos e módulos: Você pode configurar caminhos de importação personalizados para facilitar o uso de módulos e a resolução de dependências em seu projeto. Isso é especialmente útil quando você tem uma estrutura de diretórios complexa ou deseja utilizar módulos externos.
+
+O tsconfig.json também suporta a herança de configurações, permitindo que você crie configurações base e configurações específicas para subdiretórios ou arquivos individuais.
+
+Ao criar ou modificar o tsconfig.json em um projeto TypeScript, você pode especificar todas as opções relevantes para o seu projeto, garantindo que o código seja compilado corretamente e de acordo com as configurações desejadas.
+
+Para iniciar um novo arquivo tsconfig.json, você pode executar o comando tsc --init no diretório do seu projeto, ou criar um arquivo manualmente com as configurações desejadas.
+
+Em resumo, o tsconfig.json é um arquivo de configuração do TypeScript que permite personalizar o processo de compilação, definir opções de compilação e gerenciar o comportamento do compilador em um projeto TypeScript. Ele desempenha um papel importante na configuração e no ajuste fino do ambiente de desenvolvimento TypeScript.

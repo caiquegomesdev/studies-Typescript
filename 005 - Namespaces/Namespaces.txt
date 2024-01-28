@@ -1,0 +1,52 @@
+Namespaces
+Em TypeScript, namespaces (espaços de nome) são uma forma de organizar e agrupar logicamente um conjunto de classes, interfaces, funções e outros objetos relacionados. Eles fornecem um mecanismo para evitar colisões de nomes e promovem a modularidade em um projeto.
+
+Os namespaces são declarados usando a palavra-chave namespace, seguida pelo nome do namespace. Dentro do namespace, você pode definir objetos e membros relacionados usando a sintaxe normal do TypeScript.
+
+Por exemplo, vamos criar um namespace chamado Animais que contém duas classes: Cachorro e Gato:
+
+
+
+namespace Animais {
+  export class Cachorro {
+    nome: string;
+ 
+    constructor(nome: string) {
+      this.nome = nome;
+    }
+ 
+    latir(): void {
+      console.log(`${this.nome} está latindo.`);
+    }
+  }
+ 
+  export class Gato {
+    nome: string;
+ 
+    constructor(nome: string) {
+      this.nome = nome;
+    }
+ 
+    miar(): void {
+      console.log(`${this.nome} está miando.`);
+    }
+  }
+}
+
+
+Neste exemplo, as classes Cachorro e Gato são declaradas dentro do namespace Animais. O uso da palavra-chave export antes de cada classe permite que elas sejam acessíveis fora do namespace.
+
+Agora, podemos criar instâncias das classes Cachorro e Gato usando a notação de acesso ao namespace:
+
+
+
+const cachorro = new Animais.Cachorro("Rex");
+const gato = new Animais.Gato("Whiskers");
+ 
+cachorro.latir(); // Saída: "Rex está latindo."
+gato.miar(); // Saída: "Whiskers está miando."
+
+
+Os namespaces ajudam a evitar colisões de nomes, pois os objetos dentro de um namespace são acessíveis apenas usando o nome completo do namespace. Isso é particularmente útil quando você tem objetos com nomes semelhantes ou quando está integrando bibliotecas externas.
+
+No entanto, é importante notar que a partir do ECMAScript 2015 (ES6) e versões posteriores, a recomendação é utilizar os módulos do ES6 (import/export) em vez dos namespaces para organizar e modularizar o código. Os módulos fornecem uma abordagem mais robusta e padronizada para a modularização do código em JavaScript e TypeScript.
